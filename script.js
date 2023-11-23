@@ -53,7 +53,7 @@ for(let i=0; i < btns.length; i++){
     let diceNumber = Math.trunc(Math.random() * 6) + 1;
         if (btns[i].classList.contains("btn--roll")) {
             if(playing){
-                dice.src = `http://127.0.0.1:5500/dice-${diceNumber}.png`;
+                dice.src = `dice-${diceNumber}.png`;
                 dice.classList.remove("hidden");
                 if (diceNumber === 1) {
                 // switch players
