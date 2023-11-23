@@ -33,7 +33,8 @@ const init = () =>{
     dice.classList.add("hidden");
     player0.classList.add("player--active");
     player1.classList.remove("player--active");
-    document.querySelector(`.player--${activePlayer}`).classList.remove("player--winner");
+    player0.classList.remove("player--winner");
+    player1.classList.remove("player--winner");
 }
 
 init()
